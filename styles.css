@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    user-select: none;
+}
+
+body {
+    background-color: oklch(14.1% 0.005 285.823);
+    font-family: 'Minecraft';
+    color: white;
+}
+
+header {
+    width: 600px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+}
+
+footer {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    font-size: 25px;
+}
+
+.title {
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.timer {
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.score-container {
+    border-top: solid oklch(37% 0.013 285.805) 1px;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.score-title {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.score-value {
+    background-color: oklch(78.9% 0.154 211.53);
+    font-size: 20px;
+    padding: 15px 30px 10px 30px;
+    letter-spacing: 2px;
+    box-shadow: 0 10px 15px -3px rgba(34, 211, 238, 0.5), 0 4px 6px -4px rgba(34, 211, 238, 0.5);
+}
+
+.counter {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 200px;
+    opacity: 0.1;
+}
+
+.click-to-start {
+    display: block;
+}
+
+.hold-to-start {
+    display: none;
+}
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('/fonts/minecraft.ttf') format('truetype');
+}
+
+@media (max-width: 600px) {
+    header {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 20px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .timer {
+        font-size: 50px;
+    }
+
+    .score-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .score-title {
+        font-size: 15px;
+    }
+
+    .score-value {
+        font-size: 15px;
+    }
+
+    .counter {
+        font-size: 150px;
+    }
+
+    .click-to-start {
+        display: none;
+    }
+
+    .hold-to-start {
+        display: block;
+    }
+}
