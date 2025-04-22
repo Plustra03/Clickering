@@ -3,7 +3,7 @@
     "short_name": "Clickering",
     "description": "Mini web game to measure clicks per second",
 
-    "start_url": "/",
+    "start_url": "/Clickering",
     "theme_color": "#00d3f2",
     "background_color": "#09090b",
     "orientation": "portrait-primary",
