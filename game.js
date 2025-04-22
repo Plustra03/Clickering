@@ -4,9 +4,9 @@ const counterElement = document.getElementById('counter')
 const scoreElement = document.getElementById('score')
 const footerElement = document.getElementById('footer')
 
-const clickSound = new Audio('sounds/click.wav')
-const toneSound = new Audio('sounds/tone.wav')
-const beepSound = new Audio('sounds/beep.wav')
+const countdownSetSound = new Audio('sounds/countdown-set.wav')
+const countdownGoSound = new Audio('sounds/countdown-go.wav')
+const pointSound = new Audio('sounds/point.wav')
 
 let clicks = 0
 
@@ -31,10 +31,10 @@ async function start() {
 
     await countdown(4, (second) => {
         if (second > 1) {
-            reproduceSound(toneSound)
+            reproduceSound(countdownSetSound)
             timerElement.textContent = second - 1
         } else if (second > 0) {
-            reproduceSound(beepSound)
+            reproduceSound(countdownGoSound)
             timerElement.textContent = 'GO!'
         }
     })
@@ -62,7 +62,7 @@ function stop() {
 function recordClick() {
     clicks += 1
     counterElement.textContent = clicks
-    reproduceSound(clickSound)
+    reproduceSound(pointSound)
 }
 
 function registerScore(cps) {

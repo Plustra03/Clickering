@@ -56,6 +56,7 @@ footer {
 
 .score-value {
     background-color: oklch(78.9% 0.154 211.53);
+    color: oklch(14.1% 0.005 285.823);
     font-size: 20px;
     padding: 15px 30px 10px 30px;
     letter-spacing: 2px;
@@ -68,7 +69,7 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 200px;
-    opacity: 0.1;
+    opacity: 0.2;
 }
 
 .click-to-start {
@@ -81,7 +82,7 @@ footer {
 
 @font-face {
     font-family: 'Minecraft';
-    src: url('fonts/minecraft.woff') format('woff');
+    src: url('../fonts/minecraft.woff') format('woff');
 }
 
 @media (max-width: 600px) {
